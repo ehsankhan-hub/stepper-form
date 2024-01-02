@@ -1,0 +1,26 @@
+<mat-tab-group #mytab backgroundColor="primary">
+  <mat-tab label="General">
+    <ng-template style="margin-left: 10px;" mat-tab-label>
+     <div class="circle">  <mat-icon class="example-tab-icon">done</mat-icon> </div>
+      First
+    </ng-template>
+    Content 1
+    <br />
+    <br />
+    <br />
+    <button (click)="next()">Next</button>
+  </mat-tab>
+  <mat-tab label="Basic">
+    <ng-template style="margin-left: 10px;" mat-tab-label>
+      <mat-icon class="example-tab-icon">done</mat-icon>
+      First
+    </ng-template>
+    Content 2
+    <br />
+    <br />
+    <br />
+    <!-- <app-tab-child (next)="next()"></app-tab-child> -->
+    <button (click)="next()">Next</button>
+  </mat-tab>
+  <mat-tab label="Technical"> Content 3 </mat-tab>
+</mat-tab-group>
